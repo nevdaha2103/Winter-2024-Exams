@@ -1,13 +1,13 @@
 // Return an array without duplicates
 
-duplicate = (value, N) => {
+duplicate = (text, N) => {
   if (N <= 0) return [];
   else {
-    res = [];
+    duplicateText = [];
     for (let i = 0; i < N; i++) {
-      res[i] = value;
+      duplicateText[i] = text;
     }
-    return res;
+    return duplicateText;
   }
 };
 
