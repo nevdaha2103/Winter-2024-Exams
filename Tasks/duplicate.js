@@ -1,11 +1,13 @@
 // Return an array without duplicates
 
+'use strict';
+
 duplicate = (text, repeat) => {
   if (repeat <= 0) return [];
   else {
-    duplicateText = [];
+    const duplicateText = [];
     for (let i = 0; i < repeat; i++) {
-      duplicateText[i] = text;
+     const duplicateText[i] = text;
     }
     return duplicateText;
   }
