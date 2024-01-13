@@ -3,18 +3,10 @@
 "use strict";
 
 const distinct = (data) => {
-  const distinct = new Set();
-  let w = 0;
-  data.forEach((a) => {
-    if (distinctSet.has(a)) {
-      delete data[w];
-    } else {
-      distinctSet.add(a);
-    }
-    w++;
-  });
-  
-  return data.filter((x) => typeof x === "number");
+  const distinct = new Set(data);
+  const distinctSet = new Set(data);
+  const distinctArr = [...distinctSet];
+  return distinctArr;
 };
 
 module.exports = distinct;
