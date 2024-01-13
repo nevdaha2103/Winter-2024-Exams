@@ -5,12 +5,12 @@
 const sum = (object) => {
   let sum = 0;
   
-  const keys = Object.keys(object);
-  keys.forEach((key) => {
-    [];
-    const value = obj[key];
+  const values = Object.values(object);
+  for (const value of values) {
+  
+  
     if (typeof value === "number") sum += value;
-  });
+  };
   
   return sum;
 };
