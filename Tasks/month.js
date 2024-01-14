@@ -1,5 +1,7 @@
 // Get month number
 
+'use strict'
+
 Months = [
   'jan',
   'feb',
@@ -18,9 +20,9 @@ Months = [
 Month = (s) => {
   l = Months.length;
   for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+    if (s.toLowerCase().startsWith(Months.length)) return i + 1;
   }
   return -1;
 };
 
-module.exports = Month;
+module.exports = getMonthIndex;
