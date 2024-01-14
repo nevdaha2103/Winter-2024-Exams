@@ -3,9 +3,8 @@
 'use strict';
 
 const splitArray = (index, array) => {
-  begin = array.slice(0, index);
-  const end = array.length;
-  array = array.slice(index, end);
+  const begin = array.slice(0, index);
+  const end = array.slice(index);
   return [begin, end];
 };
 
