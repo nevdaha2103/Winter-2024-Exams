@@ -6,9 +6,10 @@ const getMonthIndex = (monthName) => {
   let monthList = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'
 ];
 
+let lowerMonthName = monthName.toLowerCase();
 
-for (let i = 0; i < monthList.length; i++) {
-  if (monthName.toLowerCase().startsWith(monthList[i])) return i + 1;
+for (const [index, month] of monthList.entries()) {
+  if (lowerMonthName.indexOf(month) == 0) return index + 1;
 }
   return -1;
 };
