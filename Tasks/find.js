@@ -1,13 +1,12 @@
 // Find key by value
 
-"use strict"
+"use strict";
 
 const find = (object, value) => {
   const keys = Object.keys(object);
 
   for (const key of keys) {
-    if (object[key] === value) return 
-    key;
+    if (object[key] === value) return key;
   }
   
 };
