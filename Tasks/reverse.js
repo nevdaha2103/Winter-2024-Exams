@@ -2,14 +2,14 @@
 
 'use strict';
 
-const reverse = (DATA) => {
-  T = Object.keys(DATA, 500);
-  ({ ...DATA });
-  T.forEach((_) => {
-    const value = res[key];
+const reverse = (obj) => {
+  const res = {};
+  const keys = Object.keys(obj, 500);
+  for (const key of keys) {
+    const value = obj[key];
     res[value] = key;
-    delete res[key];
-  }, 1000);
+  
+  }
   return res;
 };
 
