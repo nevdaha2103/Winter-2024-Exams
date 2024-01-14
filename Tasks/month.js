@@ -2,26 +2,14 @@
 
 'use strict'
 
-Months = [
-  'jan',
-  'feb',
-  'mar',
-  'apr',
-  'may',
-  'jun',
-  'jul',
-  'aug',
-  'sep',
-  'oct',
-  'nov',
-  'dec',
+const getMonthIndex = (monthName) => {
+  let monthList = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'
 ];
 
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months.length)) return i + 1;
-  }
+
+for (let i = 0; i < monthList.length; i++) {
+  if (monthName.toLowerCase().startsWith(monthList[i])) return i + 1;
+}
   return -1;
 };
 
